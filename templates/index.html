@@ -1,0 +1,48 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/styles.css' ) }}" >
+    <title>Customer Review Page</title>
+
+</head>
+<body> -->
+{% extends "layout.html" %}
+{% block body %}
+    <section class="wrapper">
+        <form  class="inner-wrapper"  method="POST" action="/">
+            {{ form.csrf_token }}
+            <h1>Post A Review!!!</h1>
+            {{ form.username.label }}
+            {{ form.username() }}
+            {{ form.product_name.label }}
+            {{ form.product_name }}
+            {{ form.product_review.label }}
+            {{ form.product_review }}
+            {{ form.submit(class="btn") }}
+            
+        </form>
+
+        
+
+
+    </section>
+
+    <section class="wrapper">
+        <div class="inner-wrapper-reviews scroll">
+            <h1>Customer Reviews</h1>
+
+            {% for i in range(reviews|length -1,-1,-1)  %}
+                <article>
+                    <p class="name"><b>Name</b> {{ reviews[i].username }}</p>
+                    <p><b>Product</b>: {{ reviews[i].product_name }}</p>
+                    <p><b>Review</b>: {{ reviews[i].product_review }}</p>
+                </article>
+            {% endfor %}
+        </div>
+        
+    </section>
+{% endblock %}
+<!-- </body>
+</html> -->
+

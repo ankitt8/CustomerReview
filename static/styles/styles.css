@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding:0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+article {
+    border: 3px solid #ccc;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 2px;
+    font-size: 18px;
+}
+
+article p {
+    padding: 4px;
+    
+}
+p:hover{
+    cursor: default;
+}
+.name {
+    font
+}
+article:hover {
+    background-color:#ebebe0;
+}
+.inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    flex:0 1 400px;
+}
+.inner-wrapper-reviews {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    flex:0 1 800px;
+}
+.scroll {
+    overflow-y: auto;
+    height: auto;
+    max-height: 50vh;
+    
+}
+ h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 4px;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    
+
+}
+form input:focus, form textarea:focus {
+    outline: none !important;
+    border:2px solid #0000ff;
+    box-shadow: 0 0 3px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+form label {
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.btn {
+    background-color:#0000ff;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    border:0;
+    border-radius: 8px;
+    transition: background-color 1s ease-in-out;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #0000b2;
+    
+    
+}
